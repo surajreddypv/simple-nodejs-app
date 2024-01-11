@@ -11,6 +11,7 @@ pipeline {
                 sh 'npm start'
                 sh 'node index.js &'
                 sh 'pm2 start index.js'
+                sh 'npm stop'
             }
         }
         
