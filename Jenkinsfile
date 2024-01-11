@@ -9,9 +9,9 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'npm start'
-                sh 'node index.js &'
+                // sh 'node index.js &'
                 sh 'pm2 start index.js'
-                sh 'npm stop'
+                // sh 'npm stop'
             }
         }
         
