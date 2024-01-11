@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                sh 'npm install express --save'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'node app.js'
+            }
+        }
+        
+    }
+}
