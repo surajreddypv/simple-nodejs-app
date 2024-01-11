@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm install express --save'
-                sh 'npm install -g pm2'
+                // sh 'npm install -g pm2'
             }
         }
         stage('deploy') {
